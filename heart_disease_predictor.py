@@ -29,7 +29,7 @@ class Predictor:
         user_df = np.array(row).reshape(1,11)
         predicted= self.classifier.predict(user_df)
         print("Predicted: " + str(predicted[0]))
-        return predicted
+        return predicted[0]
 
 la=str()
 def onClick():
